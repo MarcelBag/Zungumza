@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Facebook from './components/Facebook';
+import { Component } from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  render(){
+    return(
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1 className='App-title'>
+          Zungumza
+        </h1>
+        </header>
+        <MessengerCustomerChat
+          pageId="154812298055641"
+          appId="131184942178492"
+          htmlRef="<REF_STRING>"
+       />,
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        . 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Facebook/>
+        
     </div>
-  );
+    )
+  }
 }
-
 export default App;
