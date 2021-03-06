@@ -15,8 +15,8 @@ class App extends Component {
         </h1>
         </header>
         <MessengerCustomerChat
-          pageId="154812298055641"
-          appId="131184942178492"
+          pageId="Page ID from your facebook page"
+          appId="App ID from your Developer facebook website"
           htmlRef="<REF_STRING>"
        />,
         <p>
